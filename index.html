@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.2/particles.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="styles.css" />
+</head>
+
+<body>
+  <div class="outer-wrapper">
+    <div class="wrapper">
+
+      <canvas class="slide background"></canvas>
+      <div class="slide one"></div>
+      <div class="slide two"> asdasdddddddd</div>
+      <div class="slide three"> asdasdddddddd</div>
+    </div>
+  </div>
+</body>
+<script>
+  window.onload = function () {
+    Particles.init({
+      selector: '.background',
+      maxParticles: 450,
+      color: "#FFFFFF",
+      connectParticles: true,
+    });
+  };
+</script>
+
+</html>
