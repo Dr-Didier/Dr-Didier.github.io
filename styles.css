@@ -3,13 +3,12 @@
   font-family: myfont;
   src: url(BebasNeue-Regular.ttf);
 }
-
 body {
   margin: 0;
   padding: 0;
   font-family: myfont;
+  background-color: black;
 }
-
 
 .outer-wrapper {
   width: 100vh;
@@ -53,20 +52,26 @@ body {
   justify-content: center;
   text-align: center;
 }
-
 .two {
-  background: url("Victor-01.jpg");
-  background-size: auto 100vw;
-  background-position: center; /* Center the image */
-  background-repeat: no-repeat;
+  background: white;
+  background-size: auto 100vh;
   width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
 }
+
 .table{
   display: block;
   margin: auto;
 }
 tr,td{
   padding: 1em;
+}
+.backgroundequipe {
+  display:inline-block;
+  vertical-align: baseline;
 }
 .background {
   position: absolute;
@@ -98,7 +103,7 @@ tr,td{
   font-family: myfont;
 }
 
-@import url("https://fonts.googleapis.com/css2?family=bebasneue:wght@500&display=swap");<
+@import url("https://fonts.googleapis.com/css2?family=bebasneue:wght@500&display=swap");
 a{
   font-family: "BebasNeueRegular";
   src:url(BebasNeueRegular.ttf) format('truetype'),
@@ -138,4 +143,29 @@ a{
   padding-top: 3vw;
   position: relative;
 }
-
+.teamimg{
+  position: relative;
+  margin: 2em;  
+  float: left;
+}
+.teamimg2{
+  position: relative;
+  margin: 2em;  
+  float: right;
+}
+.team1{
+  display: inline-block;
+  color:white;
+  font-size: 20em;
+}
+.imgandtext{
+  padding: 2em;
+  width: 100vw;
+  display: table;
+}
+.particless{
+  position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+}
