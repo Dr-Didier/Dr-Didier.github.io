@@ -4,7 +4,7 @@
     Particles.init({
       selector: '.background',
       maxParticles: 450,
-      color: "#8055ed",
+      color: "#9ecadb",
 	  connectParticles: true,
 	  retina_detect: true,
     });
