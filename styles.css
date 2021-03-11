@@ -40,7 +40,7 @@ body {
 .slide {
   width: 100vw;
   height: 100vh;
-  scroll-snap-align: start;
+  scroll-snap-align: start !important;
 }
 
 .one {
@@ -155,8 +155,9 @@ a{
 }
 .team1{
   display: inline-block;
+  position: relative;
   color:white;
-  font-size: 20em;
+  font-size: 20vw;
 }
 .imgandtext{
   padding: 2em;
@@ -171,5 +172,56 @@ a{
 }
 .title{
   color:white;
-  
+  font-size: 20vw;
+  margin: revert;
+  position: relative;
+  text-align: center;
+}
+.text{
+  color:white;
+  font-size: 3vw;
+  position: relative;
+  text-align: justify;
+  margin: 1em;
+}
+.logo{
+  display: inline-block;
+  position: center;
+  height: 100vh;
+}
+.center{
+  margin:auto;
+  position: relative;
+  text-align: center;
+}
+.scroll{    
+  scroll-snap-type: y mandatory;
+}
+.child{  
+  scroll-snap-align: start;
+}
+.imgrightside{
+  position: relative;
+  float: right;
+  margin-left: 1em;
+}
+
+.imgleftside{
+  position: relative;
+  float: left;
+  margin-right: 1em;
+}
+.innovationtitle{
+  color:white;
+  font-size: 8vw;
+  margin: revert;
+  position: relative;
+  text-align: center;
+}
+.innovationtext{
+  color:white;
+  font-size: 2vw;
+  position: relative;
+  text-align: justify;
+  margin: 1em;
 }
