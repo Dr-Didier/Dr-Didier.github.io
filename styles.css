@@ -123,11 +123,11 @@ a{
 }
 
 .imgtest{
-  width: 15vw;
-  float: right;
-  padding-right: 3vw;
+  width: 40vw;
+  text-align: center;
   padding-top: 3vw;
   position: relative;
+  margin:auto;
 }
 .imgtest2{
   width: 15vw;
@@ -144,23 +144,27 @@ a{
   position: relative;
 }
 .teamimg{
+  width:50vw;
   position: relative;
-  margin: 2em;  
+  margin: .5em;  
   float: left;
 }
 .teamimg2{
+  width:50vw;
   position: relative;
-  margin: 2em;  
+  margin: .5em;  
   float: right;
 }
 .team1{
   display: inline-block;
   position: relative;
   color:white;
-  font-size: 20vw;
+  font-size: 15vw;
 }
 .imgandtext{
-  padding: 2em;
+  padding: 2em;  
+  padding-right: 1em;
+  padding-left: 1em;
   width: 100vw;
   display: table;
 }
@@ -190,9 +194,10 @@ a{
   height: 100vh;
 }
 .center{
-  margin:auto;
   position: relative;
-  text-align: center;
+  text-align: center; 
+  justify-content: center;
+  align-items: center;
 }
 .scroll{    
   scroll-snap-type: y mandatory;
@@ -224,4 +229,24 @@ a{
   position: relative;
   text-align: justify;
   margin: 1em;
+}
+.textteam{
+  color:white;
+  font-size: 2.5em;
+  position: relative;
+  text-align: center;
+  margin: 0.2em;
+}
+.textSmall{
+  color:white;
+  font-size: 1.5em;
+  position: relative;
+  text-align: center;
+  margin: 0.2em;
+}
+.video {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
 }
