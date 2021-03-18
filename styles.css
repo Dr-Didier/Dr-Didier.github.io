@@ -194,7 +194,6 @@ a{
   height: 100vh;
 }
 .center{
-  position: relative;
   text-align: center; 
   justify-content: center;
   align-items: center;
@@ -249,4 +248,8 @@ a{
   align-items: center;
   justify-content: center;
   height: 100%;
+}
+.imgTitle{
+  position: relative;
+  float: center;
 }
