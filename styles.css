@@ -199,7 +199,7 @@ a{
   align-items: center;
 }
 .scroll{    
-  scroll-snap-type: y mandatory;
+  scroll-snap-type: x mandatory;
 }
 .child{  
   scroll-snap-align: start;
@@ -209,7 +209,18 @@ a{
   float: right;
   margin-left: 1em;
 }
-
+@media all and (min-width:0px) and (max-width: 768px) 
+{ 
+  .imgsize{
+    width: 100vw;
+  } 
+}
+@media all and (min-width:769px) and (max-width: 5000000px) { 
+.imgsize{
+  height:100vh;
+  max-width: 60vw;
+}
+}
 .imgleftside{
   position: relative;
   float: left;
@@ -249,7 +260,7 @@ a{
   justify-content: center;
   height: 100%;
 }
-.imgTitle{
+/* .imgTitle{
   position: relative;
   float: center;
-}
+} */
