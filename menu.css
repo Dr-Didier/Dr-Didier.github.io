@@ -1,10 +1,8 @@
-body,html{margin:0;padding:0;height:100%;}
-body{background:#AEF4FF;box-shadow: inset 0 0 20vmin 0 #27C1DF;}
+
 .wrap{
   position:relative;
   width:80vmin; height:80vmin;
   margin:0 auto;
-  background:inherit;
   transform:scale(0.2) translatez(0px);
   opacity:0;
   transition:transform .5s, opacity .5s;
@@ -15,7 +13,12 @@ a{
   width:47.5%; height:47.5%;
   overflow:hidden;
   transform:scale(.5) translateZ(0px);
-  background:#1C8397;
+  background:#1C8397;  
+    font-family: myfont;
+    src: url(BebasNeue-Regular.ttf);
+  color:white;
+  text-decoration: none;
+  font-size:2em;
 }
 a div{
   height:100%;
