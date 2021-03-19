@@ -135,7 +135,7 @@ vaisseau.shooting = function(event){
         vaisseau.reload3--;
     }
 
-    if(keyboard.keys[keyboard.x] && vaisseau.reload <= 0){
+    if(keyboard.keys[keyboard.SPACE] && vaisseau.reload <= 0){
         var laser = newLaser(vaisseau.x + vaisseau.WIDTH / 2, vaisseau.y, Math.PI / 2, 100, "img/laser.png");
         vaisseau.lasers.push(laser);
         stage.addChildAt(laser, game.VAISSEAU_LASER_INDEX);
@@ -143,7 +143,7 @@ vaisseau.shooting = function(event){
         createjs.Sound.play("laserPewPew", {volume: 0.1});
     }
 
-    if (keyboard.keys[keyboard.z] && vaisseau.reload2 <= 0) {
+    if (keyboard.keys[keyboard.SPACE] && vaisseau.reload2 <= 0) {
         var laser = newLaser(vaisseau.x + vaisseau.WIDTH / 10, vaisseau.y + vaisseau.SIDE_LASER_Y_OFFSET, Math.PI / 2, 50, "img/laser2.png");
         vaisseau.lasers.push(laser);
         stage.addChildAt(laser, game.VAISSEAU_LASER_INDEX);
@@ -151,7 +151,7 @@ vaisseau.shooting = function(event){
         createjs.Sound.play("laserPewPew", {volume: 0.1});
     }
 
-    if (keyboard.keys[keyboard.c] && vaisseau.reload3 <= 0) {
+    if (keyboard.keys[keyboard.SPACE] && vaisseau.reload3 <= 0) {
         var laser = newLaser(vaisseau.x + vaisseau.WIDTH / 1.1, vaisseau.y + vaisseau.SIDE_LASER_Y_OFFSET,  Math.PI / 2, 50, "img/laser2.png");
         vaisseau.lasers.push(laser);
         stage.addChildAt(laser, game.VAISSEAU_LASER_INDEX);

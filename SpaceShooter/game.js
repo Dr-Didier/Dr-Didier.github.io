@@ -5,11 +5,7 @@
 var stage;
 var music;
 
-createjs.Sound.registerSound("music/cantinaband.mp3", "music1", 1);
-createjs.Sound.registerSound("music/Fleeing Kuro.mp3", "music2", 1);
-createjs.Sound.registerSound("music/throne.mp3", "music3", 1);
-createjs.Sound.registerSound("music/darkmaul.mp3", "music4", 1);
-createjs.Sound.registerSound("music/Temple.mp3", "music5", 1);
+
 createjs.Sound.registerSound("sound/laserPewPew.mp3", "laserPewPew", 15);
 createjs.Sound.registerSound("sound/explosion.mp3", "explosion", 20);
 
