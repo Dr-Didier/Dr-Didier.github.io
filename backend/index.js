@@ -1,30 +1,25 @@
-const config = require('./common/config/env.config.js');
+var express = require('express');
+var app = express();
+const {MongoClient} = require('mongodb');
+const uri = "mongodb://127.0.0.1:27017/Test"
+const client = new MongoClient(uri);
+var cors = require('cors');
 
-const express = require('express');
-const app = express();
-const bodyParser = require('body-parser');
+app.use(cors())
 
-const AuthorizationRouter = require('./authorization/routes.config');
-const UsersRouter = require('./users/routes.config');
+app.get("/url", async (req, res, next) => {
+  res.json(
+     await list(client));
+ }); 
 
-app.use(function (req, res, next) {
-    res.header('Access-Control-Allow-Origin', '*');
-    res.header('Access-Control-Allow-Credentials', 'true');
-    res.header('Access-Control-Allow-Methods', 'GET,HEAD,PUT,PATCH,POST,DELETE');
-    res.header('Access-Control-Expose-Headers', 'Content-Length');
-    res.header('Access-Control-Allow-Headers', 'Accept, Authorization, Content-Type, X-Requested-With, Range');
-    if (req.method === 'OPTIONS') {
-        return res.sendStatus(200);
-    } else {
-        return next();
-    }
+
+app.listen(3000, () => {
+ console.log("Server running on port 3000");
 });
 
-app.use(bodyParser.json());
-AuthorizationRouter.routesConfig(app);
-UsersRouter.routesConfig(app);
-
-
-app.listen(config.port, function () {
-    console.log('app listening at port %s', config.port);
-});
+async function list(client) {
+  await client.connect()
+  const result2 = await client.db("Test").collection("Test").find({}).toArray();
+console.log(result2);
+  return result2
+}
