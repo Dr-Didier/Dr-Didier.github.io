@@ -27,24 +27,24 @@ tsParticles.load("tsparticles", {
     "zIndex": 1
   },
   "infection": {
-    "cure": true,
-    "enable": true
+    "cure": false,
+    "enable": false
   },
   "interactivity": {
     "events": {
       "onClick": {
-        "enable": true,
+        "enable": false,
         "mode": "push"
       },
       "onHover": {
         "enable": true,
-        "mode": "repulse"
+        "mode": "attract"
       }
     },
     "modes": {
       "attract": {
-        "duration": 0.2,
-        "speed": 0.2
+        "duration": 2,
+        "speed": 1,
       },
       "bubble": {
         "distance": 400,
@@ -87,7 +87,7 @@ tsParticles.load("tsparticles", {
       "enable": true,
       "gravity": {
         "acceleration": 1,
-        "maxSpeed": 5
+        "maxSpeed": 4, "enable": true,
       },
       "path": {},
       "outModes": {
@@ -96,7 +96,7 @@ tsParticles.load("tsparticles", {
         "right": "out",
         "top": "out"
       },
-      "speed": 4,
+      "speed": 2,
       "warp": true
     },
     "number": {
