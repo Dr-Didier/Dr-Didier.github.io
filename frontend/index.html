@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/tsparticles/1.26.3/tsparticles.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="styles.css" />
+  <link rel="stylesheet" type="text/css" href="menu.css" />
+</head>
+
+<body>
+  <div id="tsparticles">
+  </div>
+  <section class="landing-page">
+    <div class="menu-btn"></div>
+    <div class="overlay"></div>
+    <div class="menu-container">
+      <ul class="menu-wrapper">
+        <li><a href="bal.html">Bal Promo</a></li>
+        <li><a href="Innovation.html">Innovation</a></li>
+        <li><a href="fashionshow.html">Fashion Show</a></li>        
+        <li><a href="REFLECTION-COMITÉ-PROMOTION_compressed.pdf"> Plan d'action</a></li>
+        <li><a href="equipe.html">Équipe</a></li>
+      </ul>
+      <div class="menu-underlay"></div>
+    </div>
+  
+    <div class="landing-page-content center">
+        <!-- <img class="logo center" style="height: 100vh; max-width: 100vw !important;" src="./img/Logo_Reflection-01.png"> -->
+    </div>
+  </section>
+</body>
+<script src="index.js"></script>
+<script>$(".menu-btn").click(function () {
+	$(".menu-btn").toggleClass("active");
+	$(".overlay").toggleClass("active");
+	$(".menu-container").toggleClass("active");
+});
+
+const cursor = curDot();
+
+cursor.over(".line-1", {
+	borderColor: "rgba(255,255,255,.38)",
+	broderWidth: 2
+});
+</script>
+</html>
+
+
+
