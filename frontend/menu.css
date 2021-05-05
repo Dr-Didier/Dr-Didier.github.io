@@ -1,0 +1,130 @@
+* {
+  font-family: myfont;
+}
+
+
+@font-face {
+  font-family: myfont;
+  src: url(BebasNeue-Regular.ttf);
+}
+.landing-page {
+  height: 100vh;
+  width: 100%;
+}
+.landing-page .menu-btn {
+  position: fixed;
+  top: 30px;
+  right: 30px;
+  height: 50px;
+  width: 50px;
+  border-radius: 100%;
+  background-color: #f8f8f8;
+  color: #1c1b20;
+  z-index: 6;
+}
+.landing-page .menu-btn:hover {
+  cursor: pointer;
+}
+.landing-page .menu-btn::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "+";
+  width: 100%;
+  height: 100%;
+  border-radius: 100%;
+  text-align: center;
+  line-height: 50px;
+  font-size: 40px;
+  font-weight: 100 !important;
+  font-family: serif;
+  transition-duration: 500ms;
+}
+.landing-page .menu-btn.active::before {
+  transform: rotate(405deg);
+  background-color: #343436;
+  color: #f8f8f8;
+}
+.landing-page .overlay {
+  position: fixed;
+  top: 30px;
+  right: 30px;
+  height: 50px;
+  width: 50px;
+  border-radius: 100%;
+  background-color: #eee;
+  transition-duration: 700ms;
+  z-index: 4;
+}
+.landing-page .overlay.active {
+  transform: scale(100, 100);
+}
+.landing-page .menu-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  z-index: -5;
+  opacity: 0;
+  transition: opacity 1500ms;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.landing-page .menu-container .menu-wrapper {
+  list-style: none;
+}
+.landing-page .menu-container .menu-wrapper li {
+  margin: 10px 0;
+  display: flex;
+  justify-content: left;
+}
+.landing-page .menu-container .menu-wrapper li a {
+  text-decoration: none;
+  letter-spacing: 5px;
+  font-weight: 700;
+  font-size: 15vmin;
+  color: rgba(255, 255, 255, 0);
+  -webkit-text-stroke: 1.4px #343436;
+  transition-duration: 200ms;
+  font-family: myfont;
+}
+.landing-page .menu-container .menu-wrapper li a:hover {
+  color: #343436;
+  -webkit-text-stroke: 0px #343436;
+}
+.landing-page .menu-container .menu-wrapper li span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 68vmin;
+  font-weight: 900;
+  color: rgba(0, 0, 0, 0.2);
+}
+.landing-page .menu-container .menu-underlay {
+  position: absolute;
+  top: 100px;
+  left: 100px;
+  background-color: lightblue;
+}
+.landing-page .menu-container.active {
+  transition-delay: 0ms;
+  opacity: 1;
+  z-index: 5;
+}
+.landing-page .landing-page-content {
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  color: #f8f8f8;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.landing-page .landing-page-content div span {
+  font-size: 40px;
+  font-weight: 400;
+}
